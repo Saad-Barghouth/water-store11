@@ -66,8 +66,75 @@ html,body{height:100%;margin:0;font-family:'Cairo',sans-serif;background:linear-
   .product-page{grid-template-columns:1fr}
   .hero{flex-direction:column}
 }
+@media ( amount 12)
+
 @media (max-width:560px){
   .product-grid{grid-template-columns:repeat(1,1fr)}
   .nav{display:none}
   .hero{padding:1.2rem 0}
+}
+/* ============================
+   📱 Responsive Design (Mobile & Tablet)
+   ============================ */
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr; /* منتج واحد في الصف */
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: auto;
+  }
+
+  .cart {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr; /* اتنين في الصف */
+    gap: 25px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 70%;
+    margin: auto;
+  }
 }
