@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Barghouth - مياه نقية</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+
+<header class="site-header container">
+  <div class="logo"><img src="images/logo.svg" alt="logo"><h1>Barghouth</h1></div>
+  <nav class="nav">
+    <a href="index.html">الرئيسية</a>
+    <a href="shop.html">المتجر</a>
+    <a href="plans.html">الاشتراكات</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">تواصل</a>
+    <a href="#" onclick="openCart(event)">السلة (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="left">
+      <h2>Barghouth — مياه نقية، توصيل سريع، راحة لا تُقارن</h2>
+      <p>نوفر لك مجموعة متنوعة من أفضل أنواع المياه المحلية والمستوردة مع خيارات اشتراك مرنة وخدمة توصيل خلال 24 ساعة.</p>
+      <div class="ctas">
+        <a class="btn" href="shop.html">تسوق الآن</a>
+        <a class="btn" href="plans.html" style="margin-left:0.6rem;background:transparent;border:1px solid rgba(255,255,255,0.06)">خطط الاشتراك</a>
+      </div>
+      <div class="features">
+        <div class="feature"><h4>توصيل خلال 24 ساعة</h4><p class="muted">خدمة سريعة داخل المدينة</p></div>
+        <div class="feature"><h4>منتجات أصلية</h4><p class="muted">نستورد وننتقي الأفضل لك</p></div>
+        <div class="feature"><h4>اشتراكات مرنة</h4><p class="muted">خطط شهرية وأسبوعية بتخفيضات</p></div>
+      </div>
+    </div>
+    <div class="img"><img src="images/barghouth-19.svg" alt="hero"></div>
+  </section>
+
+  <section style="margin-top:2rem">
+    <h3>منتجات مختارة</h3>
+    <div class="product-grid" id="featured"></div>
+  </section>
+
+  <section style="margin-top:2rem">
+    <h3>آراء العملاء</h3>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+      <div class="feature"><strong>أحمد</strong><p class="muted">"خدمة سريعة ومنتجات نقية — أنصح بالتعامل معهم."</p></div>
+      <div class="feature"><strong>منى</strong><p class="muted">"الاشتراك الشهري وفر علينا عناء الطلب المتكرر."</p></div>
+      <div class="feature"><strong>خالد</strong><p class="muted">"المنتجات أصلية والتوصيل ضمن المهلة."</p></div>
+    </div>
+  </section>
+
+  <section style="margin-top:2rem">
+    <h3>أسئلة شائعة</h3>
+    <div style="display:grid;gap:0.6rem">
+      <div class="feature"><strong>ما مدة التوصيل؟</strong><p class="muted">عادةً التوصيل خلال 24 ساعة في المدينة.</p></div>
+      <div class="feature"><strong>هل يوجد خصم للاشتراكات؟</strong><p class="muted">نعم، لدينا خصومات للطلبات الدورية.</p></div>
+      <div class="feature"><strong>هل توصلون للمحافظات؟</strong><p class="muted">نقوم بالتوصيل داخل المدينة؛ للتوصيل بين المدن تواصل معنا.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+    <div>
+      <h3>Barghouth</h3>
+      <p>مياه نقية - توصيل سريع - اشتراكات مريحة</p>
+    </div>
+    <div>
+      <p>📞 010-1234-5678</p>
+      <p>✉️ orders@barghouth.com</p>
+    </div>
+    <div style="text-align:left">
+      <p>© 2025 Barghouth Store</p>
+    </div>
+  </div>
+</footer>
+
+
+<div class="cart-drawer" id="cart-drawer">
+  <h3>سلة المشتريات</h3>
+  <div id="cart-items"></div>
+  <div style="margin-top:1rem"><strong>الإجمالي: <span id="cart-total">0</span></strong></div>
+  <div style="margin-top:1rem"><a class="btn" href="checkout.html">الدفع</a></div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/site-dark.js"></script>
+</body>
+</html>
